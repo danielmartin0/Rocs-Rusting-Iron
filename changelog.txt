@@ -1,0 +1,98 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2025-03-07
+  Changes:
+    - Internal code updates.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-03-07
+  Changes:
+    - Fixed crash with Glass.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-03-07
+  Changes:
+    - Mod title changed to just Rusting Iron.
+    - Added support for the mod Glass.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
+Date: 2025-03-04
+  Changes:
+    - Fix missing locale entry when AAI Industry is installed.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 2025-02-02
+  Changes:
+    - Corrected recipe unlocks in technologies.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Date: 2025-02-02
+  Changes:
+    - Sulfuric acid derusting now also requires water.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 2025-02-02
+  Changes:
+    - Derusting can now be performed by sulfuric acid.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 2024-11-29
+  Modding:
+    - Mod compatibility.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 18.11.2024
+  Changes:
+    - Default spoil time tweaked.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 17.11.2024
+  Changes:
+    - Rusty item weights are hardcoded to match their non-rusted counterparts. Sadly Factorio weight logic is currently undocumented, so this will probably break in e.g. my Expensive Mode mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 17.11.2024
+  Changes:
+    - 'engine-unit' now rusts, with a config option to disable this. (If you're using AAI Industry, this instead applies to 'motor'.)
+    - Rusting tint adjusted.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 17.11.2024
+  Bugfixes:
+    - Quick bugfix.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 17.11.2024
+  Changes:
+    - If the AAI Industry mod is installed, derusting recipes use stone instead of sand.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 17.11.2024
+  Changes:
+    - Minimum Factorio version adjusted.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 17.11.2024
+  Changes:
+    - Derusting recipe time reduced.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 17.11.2024
+  Features:
+    - Crafting iron gears and sticks now resets the iron's spoil timer.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 17.11.2024
+  Features:
+    - Iron plates, gears and sticks spoil by rusting, then need to be derusted with stone.
+    - Recycling rusty materials gives their original ingredients, rusted.
+    - Fulgora scrap and simple-entities now give the rusted versions of iron gears and sticks.

@@ -3,6 +3,7 @@ if mods["aai-industry"] then
   RustingIron.items["motor"] = {
     rust_scalar = RustingIron.RUSTING_SLOW,
     derust_time = RustingIron.DERUST_MEDIUM,
+    derust_cost = 3,
     icon_root = "__Rocs-Rusting-Iron__/graphics/icons/engine-unit"
   }
 end

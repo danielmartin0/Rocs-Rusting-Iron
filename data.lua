@@ -1,8 +1,9 @@
 require("api")
 
-require("prototypes.compat.base")
-require("prototypes.compat.aai-industry")
-
 require("prototypes.category")
-require("prototypes.item")
-require("prototypes.recipe")
+
+require("prototypes.compat.base")
+require("prototypes.compat.space-age")
+
+require("prototypes.compat.aai-industry")
+require("prototypes.compat.glass")

@@ -13,4 +13,10 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 	},
+  {
+    type = "bool-setting",
+    name = "rocs-rusting-iron-no-mercy",
+    setting_type = "startup",
+    default_value = false
+  }
 })

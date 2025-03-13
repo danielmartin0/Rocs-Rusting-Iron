@@ -1,9 +1,10 @@
 if mods["aai-industry"] then
-  ScrapIndustry.items["engine-unit"] = nil
-  RustingIron.items["motor"] = {
-    rust_scalar = RustingIron.RUSTING_SLOW,
-    derust_time = RustingIron.DERUST_MEDIUM,
+  RustingIron.rusting_items["engine-unit"] = nil
+  RustingIron.rusting_items["motor"] = {
+    rust_timescale = RustingIron.RUSTING_SLOW,
+    derust_timescale = RustingIron.DERUST_MEDIUM,
     derust_cost = 3,
     icon_root = "__Rocs-Rusting-Iron__/graphics/icons/engine-unit"
   }
+  RustingIron.derusting_recipes["derusting"].ingredients = {{type="item", name="sand", amount=1}}
 end

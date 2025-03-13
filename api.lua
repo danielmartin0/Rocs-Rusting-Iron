@@ -1,5 +1,6 @@
 RustingIron = {
-  items = {},
+  rusting_items = {},
+  derusting_recipes = {},
   recipes = {},
   RUSTING_FAST = 0.5,
   RUSTING_NORMAL = 1,

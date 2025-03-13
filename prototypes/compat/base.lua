@@ -1,42 +1,47 @@
-RustingIron.items["iron-plate"] = {
-  rust_scalar = RustingIron.RUSTING_NORMAL,
-  derust_time = RustingIron.DERUST_EASY,
+RustingIron.rusting_items["iron-plate"] = {
+  rust_timescale = RustingIron.RUSTING_NORMAL,
+  derust_timescale = RustingIron.DERUST_EASY,
   icon_root = "__Rocs-Rusting-Iron__/graphics/icons/iron-plate",
 }
-RustingIron.items["iron-gear-wheel"] = {
-  rust_scalar = RustingIron.RUSTING_NORMAL,
-  derust_time = RustingIron.DERUST_EASY,
+RustingIron.rusting_items["iron-gear-wheel"] = {
+  rust_timescale = RustingIron.RUSTING_NORMAL,
+  derust_timescale = RustingIron.DERUST_EASY,
   icon_root = "__Rocs-Rusting-Iron__/graphics/icons/iron-gear-wheel",
 }
-RustingIron.items["iron-stick"] = {
-  rust_scalar = RustingIron.RUSTING_NORMAL,
-  derust_time = RustingIron.DERUST_EASY,
+RustingIron.rusting_items["iron-stick"] = {
+  rust_timescale = RustingIron.RUSTING_NORMAL,
+  derust_timescale = RustingIron.DERUST_EASY,
   icon_root = "__Rocs-Rusting-Iron__/graphics/icons/iron-stick",
 }
 
 if settings.startup["rocs-rusting-iron-engines-rust"].value then
-  RustingIron.items["engine-unit"] = {
-    rust_scalar = RustingIron.RUSTING_SLOW,
-    derust_time = RustingIron.DERUST_COMPLEX,
+  RustingIron.rusting_items["engine-unit"] = {
+    rust_timescale = RustingIron.RUSTING_SLOW,
+    derust_timescale = RustingIron.DERUST_COMPLEX,
     derust_cost = 3,
     icon_root = "__Rocs-Rusting-Iron__/graphics/icons/engine-unit"
   }
 end
 
-RustingIron.recipes["derusting"] = {
+RustingIron.derusting_recipes["derusting"] = {
   ingredients = {{type="item", name="stone", amount=1}},
   category = "crafting",
   derust_amount = 1,
-  time_scalar = 1,
-  overlay_icon = nil,
+  derust_timescale = 1
 }
-RustingIron.recipes["chemical-derusting"] = {
+RustingIron.derusting_recipes["chemical-derusting"] = {
   ingredients = {
     {type="fluid", name="sulfuric-acid", amount=10},
     {type="fluid", name="water", amount=30}
   },
   category = "chemistry",
+  technology = "sulfur-processing",
   derust_amount = 2,
-  time_scalar = 1,
-  overlay_icon = "__base__/graphics/icons/fluid/sulfuric-acid.png"
+  derust_timescale = 1,
+  overlay_icon = {icon="__base__/graphics/icons/fluid/sulfuric-acid.png", shift={-8, -8}, scale=0.35, draw_background=true},
+  crafting_machine_tint = {
+    primary = {r=0.7, g=0.7, b=0.1},
+    secondary = {r=0.8, g=0.8, b=0.1},
+    tertiary = {r=0.7, g=0.7, b=0.1},
+  }
 }

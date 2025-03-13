@@ -15,6 +15,7 @@ for item_name,rust_metadata in pairs(RustingIron.rusting_items) do
     {
       type = "item",
       name = rusty_item_name,
+      localised_name = {"item-name.rusty-item", base_item.localised_name or {"item-name."..item_name}},
       icon = rust_metadata.icon_root.."-rusty.png",
       icon_size = rust_metadata.icon_size or 64,
       subgroup = base_item.subgroup,
@@ -93,6 +94,7 @@ for item_name,rust_metadata in pairs(RustingIron.rusting_items) do
       {
         type = "recipe",
         name = derusting_recipe_name,
+        localised_name = {derust_metadata.localised_name, {"item-name."..item_name}},
         icons = derust_metadata.overlay_icon and {
           base_icon,
           derust_metadata.overlay_icon
@@ -170,11 +172,13 @@ if mods["quality"] then
       end
 
       local rusty_item_name = item_name.."-rusty"
+      local rusty_item = data.raw.item[rusty_item_name]
       data:extend({
         {
           type = "recipe",
           name = rusty_item_name.."-recycling",
-          icons = generate_recycling_recipe_icons_from_item(data.raw.item[rusty_item_name]),
+          localised_name = {"recipe-name.recycling", rusty_item.localised_name},
+          icons = generate_recycling_recipe_icons_from_item(rusty_item),
           category = "recycling",
           hidden = true,
           allow_decomposition = false,

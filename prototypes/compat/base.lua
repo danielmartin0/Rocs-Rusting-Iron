@@ -25,6 +25,7 @@ end
 
 RustingIron.derusting_recipes["derusting"] = {
   ingredients = {{type="item", name="stone", amount=1}},
+  localised_name = "recipe-name.item-derusting",
   category = "crafting",
   derust_amount = 1,
   derust_timescale = 1
@@ -34,6 +35,7 @@ RustingIron.derusting_recipes["chemical-derusting"] = {
     {type="fluid", name="sulfuric-acid", amount=10},
     {type="fluid", name="water", amount=30}
   },
+  localised_name = "recipe-name.chemical-derusting",
   category = "chemistry",
   technology = "sulfur-processing",
   derust_amount = 2,

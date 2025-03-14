@@ -10,13 +10,13 @@
     ["rocs-rusting-iron-iron-plate-derusting", "iron-plate-derusting"],
     ["rocs-rusting-iron-iron-gear-wheel-derusting", "iron-gear-wheel-derusting"],
     ["rocs-rusting-iron-iron-stick-derusting", "iron-stick-derusting"],
-    ["rocs-rusting-iron-engine-unit-derusting", "iron-engine-unit-derusting"],
+    ["rocs-rusting-iron-engine-unit-derusting", "engine-unit-derusting"],
     ["rocs-rusting-iron-motor-derusting", "motor-derusting"],
     
     ["rocs-rusting-iron-iron-plate-chemical-derusting", "iron-plate-chemical-derusting"],
     ["rocs-rusting-iron-iron-gear-wheel-chemical-derusting", "iron-gear-wheel-chemical-derusting"],
     ["rocs-rusting-iron-iron-stick-chemical-derusting", "iron-stick-chemical-derusting"],
-    ["rocs-rusting-iron-engine-unit-chemical-derusting", "iron-engine-unit-chemical-derusting"],
+    ["rocs-rusting-iron-engine-unit-chemical-derusting", "engine-unit-chemical-derusting"],
     ["rocs-rusting-iron-motor-chemical-derusting", "motor-chemical-derusting"]
   ]
 }

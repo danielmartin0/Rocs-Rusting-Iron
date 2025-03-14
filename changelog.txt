@@ -1,8 +1,22 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.3
-Date: ????
+Version: 1.2.0
+Date: 2025-03-14
+  Major Features:
+    - Added new "No Mercy" setting that changes recipes to not refresh the rusting timer anymore. Would not recommend.
+    - rocs-rusting-iron- prefix has been removed from internal names.
+  Minor Features:
+    - Mod has been refactored with a new API that auto-generates items, recipes, and unlocks.
+    - Items are specified with a rusting timescale, derusting timescale, derust amount, and icon root.
+    - Items can optionally be specified with a derust cost scalar.
+    - Derusting recipes are specified with ingredients, a localisation key, a recipe category, and a derust timescale.
+    - Recipes can optionally be specified with an overlay icon and crafting machine tints.
+    - Localisation is now automatically generated from the base item.
   Changes:
-    - Github repo version.
+    - Engine units now take longer to rust (+50%).
+    - Iron sticks now derust 2 at a time.
+    - Derusting with sulfuric acid now derusts 2x as many items.
+  Compatibility:
+    - While you still need to own the DLC since the mod requires spoiling, you can now use Rusting Iron without SA or Quality enabled!
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2025-03-07

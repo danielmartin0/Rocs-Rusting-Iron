@@ -1,16 +1,19 @@
 RustingIron.rusting_items["iron-plate"] = {
   rust_timescale = RustingIron.RUSTING_NORMAL,
   derust_timescale = RustingIron.DERUST_EASY,
+  derust_amount = 1,
   icon_root = "__Rocs-Rusting-Iron__/graphics/icons/iron-plate",
 }
 RustingIron.rusting_items["iron-gear-wheel"] = {
   rust_timescale = RustingIron.RUSTING_NORMAL,
   derust_timescale = RustingIron.DERUST_EASY,
+  derust_amount = 1,
   icon_root = "__Rocs-Rusting-Iron__/graphics/icons/iron-gear-wheel",
 }
 RustingIron.rusting_items["iron-stick"] = {
   rust_timescale = RustingIron.RUSTING_NORMAL,
   derust_timescale = RustingIron.DERUST_EASY,
+  derust_amount = 2,
   icon_root = "__Rocs-Rusting-Iron__/graphics/icons/iron-stick",
 }
 
@@ -18,7 +21,8 @@ if settings.startup["rocs-rusting-iron-engines-rust"].value then
   RustingIron.rusting_items["engine-unit"] = {
     rust_timescale = RustingIron.RUSTING_SLOW,
     derust_timescale = RustingIron.DERUST_COMPLEX,
-    derust_cost = 3,
+    derust_amount = 1,
+    derust_costscale = 3,
     icon_root = "__Rocs-Rusting-Iron__/graphics/icons/engine-unit"
   }
 end

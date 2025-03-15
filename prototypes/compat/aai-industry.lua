@@ -4,6 +4,7 @@ if mods["aai-industry"] then
     rust_timescale = RustingIron.RUSTING_SLOW,
     derust_timescale = RustingIron.DERUST_MEDIUM,
     derust_cost = 3,
+    derust_amount = 1,
     icon_root = "__Rocs-Rusting-Iron__/graphics/icons/engine-unit"
   }
   RustingIron.derusting_recipes["derusting"].ingredients = {{type="item", name="sand", amount=1}}

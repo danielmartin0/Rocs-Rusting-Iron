@@ -80,11 +80,11 @@ for item_name,rust_metadata in pairs(RustingIron.rusting_items) do
     local derusting_recipe_name = item_name.."-"..derust_suffix
     local base_icon = {icon=rust_metadata.icon_root.."-derust.png", size=rust_metadata.icon_size or 64, draw_background=true}
     
-    local amount = rust_metadata.derust_amount * derust_metadata.derust_amount
+    local amount = (rust_metadata.derust_amount or 1) * (derust_metadata.derust_amount or 1)
     local ingredients = util.table.deepcopy(derust_metadata.ingredients)
     if rust_metadata.derust_costscale then
       for _,ingredient in pairs(ingredients) do
-        ingredient.amount = rust_metadata.derust_costscale * ingredient.amount
+        ingredient.amount = (rust_metadata.derust_costscale or 1) * ingredient.amount
       end
     end
     table.insert(ingredients, {type="item", name=rusty_item_name, amount=amount, ignored_by_stats=amount})

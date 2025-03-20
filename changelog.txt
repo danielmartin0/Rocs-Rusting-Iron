@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
-Date: ????
-  Changes:
-    - Github repo version.
+Date: 2025-03-20
+  Compatibility:
+    - Add compatibility for using sand from Crushing Industry in derusting recipes.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 2025-03-15

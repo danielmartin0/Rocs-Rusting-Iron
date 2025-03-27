@@ -148,10 +148,13 @@ end
 -------------------------------------------------------------------------- Entity results
 
 for _,entity in pairs(data.raw["simple-entity"]) do
-  if entity.minable and entity.minable.results then
-    for _,result in pairs(entity.minable.results) do
-      if RustingIron.rusting_items[result.name] then
-        result.name = result.name.."-rusty"
+  local entity_metadata = RustingIron.minable_entities[entity.name] or {}
+  if not entity_metadata.ignore then
+    if entity.minable and entity.minable.results then
+      for _,result in pairs(entity.minable.results) do
+        if RustingIron.rusting_items[result.name] then
+          result.name = result.name.."-rusty"
+        end
       end
     end
   end

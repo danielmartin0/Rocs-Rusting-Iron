@@ -1,17 +1,17 @@
 {
-  "name": "Rocs-Rusting-Iron",
-  "version": "1.2.3",
-  "factorio_version": "2.0",
-  "title": "Rusting Iron",
-  "author": "thesixthroc,SafTheLamb",
-  "contact": "factorio@danielgmartin.com",
-  "description": "Iron plates, gears, sticks and engines spoil by rusting, then need to be derusted. Bringing a piece of Gleba to everyone.",
-  "dependencies": [
-    "base >= 2.0.0",
-    "? space-age",
-    "(?) crushing-industry",
-    "(?) aai-industry",
-    "(?) Glass"
-  ],
-  "spoiling_required": true
+    "name": "Rocs-Rusting-Iron",
+    "version": "1.2.4",
+    "factorio_version": "2.0",
+    "title": "Rusting Iron",
+    "author": "thesixthroc,SafTheLamb",
+    "contact": "factorio@danielgmartin.com",
+    "description": "Iron plates, gears, sticks and engines spoil by rusting, then need to be derusted. Bringing a piece of Gleba to everyone.",
+    "dependencies": [
+        "base >= 2.0.0",
+        "? space-age",
+        "(?) crushing-industry",
+        "(?) aai-industry",
+        "(?) Glass"
+    ],
+    "spoiling_required": true
 }
